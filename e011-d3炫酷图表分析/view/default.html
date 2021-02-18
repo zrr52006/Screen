@@ -1,0 +1,96 @@
+
+<div class="page-body">
+
+	<div class="index-row1">
+
+		<div class="col4 ">
+			<div class="item-box">
+				<div class="item-title">Pie</div>
+				<div class="item-con">
+					<svg width="100%" height="100%" id="svg-pie" viewBox="0 0 400 300"></svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="col4 ">
+			<div class="item-box">
+				<div class="item-title">Annular</div>
+				<div class="item-con">
+					<svg width="100%" height="100%" id="board" viewBox="0 0 500 300"></svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="col4 ">
+			<div class="item-box">
+				<div class="item-title">Brdar Chart</div>
+				<div class="item-con">
+					<svg width="100%" height="100%" id="radar" viewBox="0 0 300 300"></svg>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="index-row2">
+
+		<div class="col6">
+			<div class="item-box">
+				<div class="item-title">Bar Chart</div>
+				<div class="item-con">
+					<svg width="100%" height="100%" id="bar" viewBox="0 0 500 222">
+						<defs>
+							<linearGradient id="bar1" x1="0%" y1="0%" x2="0%" y2="100%">
+								<stop offset="0%" style="stop-color:rgb(78,209,178);stop-opacity:1"/>
+								<stop offset="100%" style="stop-color:rgb(62,120,202);stop-opacity:1"/>
+							</linearGradient>
+							<linearGradient id="bar2" x1="0%" y1="0%" x2="0%" y2="100%">
+								<stop offset="0%" style="stop-color:rgb(145,67,255);stop-opacity:1"/>
+								<stop offset="100%" style="stop-color:rgb(246,150,177);stop-opacity:1"/>
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="col6">
+			<div class="item-box">
+				<div class="item-title">Polyline Chart</div>
+				<div class="item-con ">
+					<div class="svg-con">
+						<svg width="100%" height="100%" id="polyline">
+							<linearGradient id="linear0" x1="0%" y1="0%" x2="100%" y2="0%">
+			  					<stop offset="0%" stop-color="#ef0d76"/> <stop offset="100%" stop-color="#fcfb0c"/>
+							</linearGradient>
+							<linearGradient id="linear1" x1="0%" y1="0%" x2="100%" y2="0%">
+			  					<stop offset="0%" stop-color="#f7f809"/> <stop offset="100%" stop-color="#31fde0"/>
+							</linearGradient>
+							<linearGradient id="rect1" x1="0%" y1="0%" x2="0%" y2="100%">
+			  					<stop offset="0%" stop-color="#b9abef" stop-opacity="0.3"/> <stop offset="100%" stop-color="#6245df" stop-opacity="0.5"/>
+							</linearGradient>
+							<defs>
+							    <filter id="f1">
+							    	<feColorMatrix tpye="matrix" result="color" values="
+									0 0 0 0.73 0
+									0 0 0 0.3 0
+									0 0 0 0.97 0
+									0 0 0 0.8 0
+							    	"></feColorMatrix>
+							    	<feGaussianBlur in="color" stdDeviation="4" result="blur"></feGaussianBlur>
+							      	<feOffset in="blur"  dx="0" dy="0" result="offset"></feOffset>
+							     	<feMerge>
+								     	<feMergeNode in="offset"></feMergeNode>
+								     	<feMergeNode in="SourceGraphic"></feMergeNode>
+							     	</feMerge>							     
+							    </filter>
+							</defs>
+						</svg>
+					</div>					
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>

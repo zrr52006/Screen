@@ -1,0 +1,2332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beid - Responsive HTML5 Template</title>
+    
+    <!-- CSS -->
+    <link href="assets/css/fonts/fontawesome/all.min.css" rel="stylesheet">
+    <link href="assets/css/fonts/beid.css" rel="stylesheet">
+    
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <!-- JQVMAP -->
+    <link href="assets/plugins/jqvmap/jqvmap.min.css" rel="stylesheet">
+
+    <!-- dateRangePicker -->
+    <link href="assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!-- Fonts -->
+    <link href="assets/fonts/inter/inter.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="body">
+
+    <!-- header -->
+    <header class="main-header">
+      <!-- nav -->
+      <nav class="main-navbar navbar navbar-expand-lg navbar-light shadow-2">
+        <div class="lnav-box d-flex">
+          <div class="logo-wrapper px-3 d-none d-md-flex">
+            <img src="assets/img/logo.png" alt="Logo">
+          </div>
+          <div class="sidebar-toggler-wrapper ml-auto">
+            <button class="p-collapsing-sidebar-toggler sidebar-toggler-secondary transition rounded-circle" data-collapsing="partially" data-collapsing-target="#adminNav" type="button">
+              <span class="icon-menu-options"></span>
+            </button>
+          </div>
+        </div>
+        <div class="d-none d-lg-block ml-0 mr-auto pl-4">
+          <ul class="nav navbar-nav flex-row">
+            <li class="nav-item dropdown">
+              <a class="nav-link d-inline-flex align-items-center h-100 text-capitalize ls-normal small-1" id="dropdownDashboards" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="fw-400"><i class="far fa-folder mr-1"></i><span class="d-none d-xl-inline">Dashboards</span></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-left shadow-1 py-3 position-absolute mt-1" aria-labelledby="dropdownDashboards">
+                <a class="dropdown-item" href="index-dashboard.html">Default</a>
+                <a class="dropdown-item" href="index-eCommerce.html">E-Commerce</a>
+                <a class="dropdown-item" href="#">Charts</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link d-inline-flex align-items-center h-100 text-capitalize ls-normal small-1" id="dropdownEcommerce" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="fw-400"><i class="icon-cart mr-1"></i><span class="d-none d-xl-inline">E-Commerce</span></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-left shadow-1 py-3 position-absolute mt-1" aria-labelledby="dropdownEcommerce">
+                <a class="dropdown-item" href="shop.html">Shop</a>
+                <a class="dropdown-item" href="product-details.html">Product details</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-inline-flex align-items-center h-100 text-capitalize ls-normal small-1" href="email.html">
+                <span class="fw-400"><i class="icon-closed-envelope-email mr-1"></i><span class="d-none d-xl-inline">Email</span></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="pr-6">
+          <ul class="nav sec-nav navbar-nav flex-row">
+            <li class="nav-item dropdown">
+              <a class="nav-link text-capitalize d-none d-md-inline-flex align-items-center h-100 small-2" href="#" id="dropdownLang_02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="img-lang mr-3" src="assets/img/icons/flag/usa.svg" alt="USA">
+                <div class="lh-1 fw-400">
+                  English
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right shadow-1 py-3 position-absolute mt-1" aria-labelledby="dropdownAdmin">
+                <a class="dropdown-item d-flex align-items-center py-1" href="#">
+                  <img class="img-lang mr-3" src="assets/img/icons/flag/usa.svg" alt="USA">
+                  English
+                </a>
+                <a class="dropdown-item d-flex align-items-center py-1" href="#">
+                  <img class="img-lang mr-3" src="assets/img/icons/flag/ger.svg" alt="GR">
+                  German
+                </a>
+                <a class="dropdown-item d-flex align-items-center py-1" href="#">
+                  <img class="img-lang mr-3" src="assets/img/icons/flag/fr.svg" alt="FR">
+                  France
+                </a>
+                <a class="dropdown-item d-flex align-items-center py-1" href="#">
+                  <img class="img-lang mr-3" src="assets/img/icons/flag/cn.svg" alt="CN">
+                  Chinese
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-toggle="offcanvas" data-target="#offcanvas-search" class="nav-link lead-2 pl-2 pl-md-3"><span class="icon-search"></span></a>
+            </li>
+            <li class="notf-item nav-item p-static p-md-relative dropdown">
+              <a class="notf-link nav-link d-inline-flex align-items-center h-100 small-1 pl-2 pl-md-3" href="#" id="dropdownAdmin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="p-relative d-inline-flex">
+                  <span class="badge badge-counter badge-warning l-1">8</span><span class="icon-bell lead-2"></span>
+                </span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-sm-center dropdown-menu-right dropdown-menu-wh shadow-1 bc-t position-absolute mt-1" aria-labelledby="dropdownAdmin">
+                <div class="dropdown-inner rounded-2">
+                  <div class="warning-gradient px-4 py-3 text-center">
+                    <h5 class="mb-0">Notifications (+5)</h5>
+                  </div>
+                  <div class="pl-4 pr-3 py-5">
+                    <div class="dropdown-scrollbar" data-scrollbar="dropdown">
+                      <ul class="list-unstyled">
+                        <li class="pb-4">
+                          <div class="d-flex align-items-center text-white">
+                            <div class="text-warning lead-2"><i class="fas fa-box"></i></div>
+                            <div class="px-4">
+                              <span class="text-warning lead-1 lh-2 fw-600 d-block">New Message</span>
+                              <span>New message?</span>
+                            </div>
+                            <div class="text-nowrap ml-auto pr-4">
+                              2 hours ago
+                            </div>
+                          </div>
+                        </li>
+                        <li class="pb-4">
+                          <div class="d-flex align-items-center text-white">
+                            <div class="text-warning lead-2"><i class="fas fa-box"></i></div>
+                            <div class="px-4">
+                              <span class="text-warning lead-1 lh-2 fw-600 d-block">New Message</span>
+                              <span>New message?</span>
+                            </div>
+                            <div class="text-nowrap ml-auto pr-4">
+                              3 hours ago
+                            </div>
+                          </div>
+                        </li>
+                        <li class="pb-4">
+                          <div class="d-flex align-items-center text-white">
+                            <div class="text-warning lead-2"><i class="fas fa-box"></i></div>
+                            <div class="px-4">
+                              <span class="text-warning lead-1 lh-2 fw-600 d-block">New Message</span>
+                              <span>New message?</span>
+                            </div>
+                            <div class="text-nowrap ml-auto pr-4">
+                              6 hours ago
+                            </div>
+                          </div>
+                        </li>
+                        <li class="pb-4">
+                          <div class="d-flex align-items-center text-white">
+                            <div class="text-warning lead-2"><i class="fas fa-box"></i></div>
+                            <div class="px-4">
+                              <span class="text-warning lead-1 lh-2 fw-600 d-block">New Message</span>
+                              <span>New message?</span>
+                            </div>
+                            <div class="text-nowrap ml-auto pr-4">
+                              6 hours ago
+                            </div>
+                          </div>
+                        </li>
+                        <li class="pb-4">
+                          <div class="d-flex align-items-center text-white">
+                            <div class="text-warning lead-2"><i class="fas fa-box"></i></div>
+                            <div class="px-4">
+                              <span class="text-warning lead-1 lh-2 fw-600 d-block">New Message</span>
+                              <span>New message?</span>
+                            </div>
+                            <div class="text-nowrap ml-auto pr-4">
+                              6 hours ago
+                            </div>
+                          </div>
+                        </li>
+                        <li class="pb-4">
+                          <div class="d-flex align-items-center text-white">
+                            <div class="text-warning lead-2"><i class="fas fa-box"></i></div>
+                            <div class="px-4">
+                              <span class="text-warning lead-1 lh-2 fw-600 d-block">New Message</span>
+                              <span>New message?</span>
+                            </div>
+                            <div class="text-nowrap ml-auto pr-4">
+                              7 hours ago
+                            </div>
+                          </div>
+                        </li>
+                        <li class="pb-4">
+                          <div class="d-flex align-items-center text-white">
+                            <div class="text-warning lead-2"><i class="fas fa-box"></i></div>
+                            <div class="px-4">
+                              <span class="text-warning lead-1 lh-2 fw-600 d-block">New Message</span>
+                              <span>New message?</span>
+                            </div>
+                            <div class="text-nowrap ml-auto pr-4">
+                              7 hours ago
+                            </div>
+                          </div>
+                        </li>
+                        <li class="pb-4">
+                          <div class="d-flex align-items-center text-white">
+                            <div class="text-warning lead-2"><i class="fas fa-box"></i></div>
+                            <div class="px-4">
+                              <span class="text-warning lead-1 lh-2 fw-600 d-block">New Message</span>
+                              <span>New message?</span>
+                            </div>
+                            <div class="text-nowrap ml-auto pr-4">
+                              8 hours ago
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="dropdown-load-more text-center px-4 py-2">
+                    <a href="#">load more</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="notf-item nav-item p-static p-md-relative dropdown">
+              <a class="notf-link nav-link d-inline-flex align-items-center h-100 small-1 pl-2 pl-md-3" href="#" id="dropdownCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="p-relative d-inline-flex">
+                  <span class="badge badge-counter badge-warning l-1">7</span><span class="icon-cart lead-2"></span>
+                </span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right dropdown-menu-sm-center dropdown-menu-wh shadow-1 bc-t position-absolute mt-1" aria-labelledby="dropdownCart">
+                <div class="dropdown-inner rounded-2">
+                  <div class="warning-gradient px-4 py-3 text-center">
+                    <h5 class="mb-0">Cart (+3)</h5>
+                  </div>
+                  <div class="pl-4 pr-3 py-5">
+                    <div class="dropdown-scrollbar" data-scrollbar="dropdown">
+                      <ul class="cart_list_hr list-unstyled">
+                        <li class="cart_list_item_hr">
+                          <div class="d-flex align-items-center text-white">
+                            <div class="text-warning cart-img lead-2">
+                              <img src="assets/img/eCommerce/eCe-01.jpg" class="" alt="Smart Watch">
+                            </div>
+                            <div class="flex-1 px-4">
+                              <div class="d-flex align-items-center">
+                                <div class="pr-4">
+                                  <span class="text-warning lead-1 lh-2 fw-600 d-block">Apple Watch OS</span>
+                                  <div class="cart-nav-desc">Learn small ways to make a big difference to.</div>
+                                </div>
+                                <div class="px-3 ml-auto">
+                                  <a href="#" class="text-nowrap text-warning"><i class="fas fa-trash"></i></a>
+                                </div>
+                              </div>
+                              <div class="d-flex">
+                                <div>x1</div>
+                                <div class="ml-auto">$1000</div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="cart_list_item_hr">
+                          <div class="d-flex align-items-center text-white">
+                            <div class="text-warning cart-img lead-2">
+                              <img src="assets/img/eCommerce/eCe-02.jpg" class="" alt="Smart Watch">
+                            </div>
+                            <div class="flex-1 px-4">
+                              <div class="d-flex align-items-center">
+                                <div class="pr-4">
+                                  <span class="text-warning lead-1 lh-2 fw-600 d-block">Apple iMac</span>
+                                  <div class="cart-nav-desc">Learn small ways to make a big difference to.</div>
+                                </div>
+                                <div class="px-3 ml-auto">
+                                  <a href="#" class="text-nowrap text-warning"><i class="fas fa-trash"></i></a>
+                                </div>
+                              </div>
+                              <div class="d-flex">
+                                <div>x1</div>
+                                <div class="ml-auto">$1000</div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="cart_list_item_hr">
+                          <div class="d-flex align-items-center text-white">
+                            <div class="text-warning cart-img lead-2">
+                              <img src="assets/img/eCommerce/eCe-03.jpg" class="" alt="Smart Watch">
+                            </div>
+                            <div class="flex-1 px-4">
+                              <div class="d-flex align-items-center">
+                                <div class="pr-4">
+                                  <span class="text-warning lead-1 lh-2 fw-600 d-block">Apple Watch OS</span>
+                                  <div class="cart-nav-desc">Learn small ways to make a big difference to.</div>
+                                </div>
+                                <div class="px-3 ml-auto">
+                                  <a href="#" class="text-nowrap text-warning"><i class="fas fa-trash"></i></a>
+                                </div>
+                              </div>
+                              <div class="d-flex">
+                                <div>x1</div>
+                                <div class="ml-auto">$1000</div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="cart_list_item_hr">
+                          <div class="d-flex align-items-center text-white">
+                            <div class="text-warning cart-img lead-2">
+                              <img src="assets/img/eCommerce/eCe-04.jpg" class="" alt="Smart Watch">
+                            </div>
+                            <div class="flex-1 px-4">
+                              <div class="d-flex align-items-center">
+                                <div class="pr-4">
+                                  <span class="text-warning lead-1 lh-2 fw-600 d-block">Apple Watch OS</span>
+                                  <div class="cart-nav-desc">Learn small ways to make a big difference to.</div>
+                                </div>
+                                <div class="px-3 ml-auto">
+                                  <a href="#" class="text-nowrap text-warning"><i class="fas fa-trash"></i></a>
+                                </div>
+                              </div>
+                              <div class="d-flex">
+                                <div>x1</div>
+                                <div class="ml-auto">$1000</div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="dropdown-load-more text-center px-4 py-2">
+                    <a href="#"><span class="icon-cart mr-1"></span> View Cart</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="userTH-item nav-item dropdown">
+              <a class="userTH-link nav-link d-inline-flex align-items-center h-100 small-1 pl-2 pl-md-3" href="#" id="dropdownAdmin_01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon-options lead-2"></span></a>
+              <div class="dropdown-menu dropdown-menu-right shadow-1 py-3 position-absolute mt-1" aria-labelledby="dropdownAdmin">
+                <a class="dropdown-item" href="#">Dashboards</a>
+                <a class="dropdown-item" href="#">UI</a>
+                <a class="dropdown-item" href="#">Charts</a>
+              </div>
+            </li>
+            <li class="user-item nav-item dropdown">
+              <a class="user-link nav-link d-inline-flex align-items-center h-100 small-1 pl-1 pl-sm-3 pr-0" href="#" id="dropdownAdmin_02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="user-avatar rounded-circle mr-sm-3" src="assets/img/avatar/1.jpg" alt="Avatar">
+                <div class="d-none d-sm-block lh-1">
+                  <div class="lh-5">Albert Scott</div>
+                  <span class="small-3"><i class="fas fa-circle text-warning small-5"></i> Online</span>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right shadow-1 py-3 position-absolute mt-2" aria-labelledby="dropdownAdmin">
+                <a class="dropdown-item" href="#"><span class="icon-messenger-user-avatar mr-2"></span>My Profile</a>
+                <a class="dropdown-item" href="#"><span class="icon-closed-envelope-email mr-2"></span>Messages</a>
+                <a class="dropdown-item" href="#"><span class="icon-options-gear mr-2"></span>Settings</a>
+                <a class="dropdown-item" href="#"><span class="icon-power-on-buton mr-2"></span>Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- /.nav -->
+    </header>
+    <!-- /.header -->
+
+    <!-- main -->
+    <main>
+      <!-- sidebar -->
+      <nav id="adminNav" class="main-sidebar p-collapsing-sidebar sidebar-fixed sidebar-left d-flex flex-column">
+        <div class="main-sidebar-inner" data-scrollbar="sidebar">
+          <ul class="sidebar-nav sidebar-nav-light-hover list-unstyled text-unset small-3 fw-600 content-list">
+            <li class="nav-item text-light transition">
+              <a href="" aria-expanded="false" data-toggle="collapse" class="sbr-collapse nav-link nav-link-border collapsed collapser collapser-active">
+                <i class="fas fa-desktop"></i> <span class="p-collapsing-title">Dashboard</span>
+              </a>
+              <div class="collapse nav-collapse collapse show">
+                <ul class="list-unstyled">
+                  <li class="nav-item">
+                    <a href="index-dashboard.html" class="p-collapsing-title nav-link">
+                      <span>Default</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index-eCommerce.html" class="p-collapsing-title nav-link">
+                      <span>E-Commerce</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index-analytics.html" class="p-collapsing-title nav-link">
+                      <span>Analytics</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item text-light transition active">
+              <a href="" aria-expanded="false" data-toggle="collapse" class="sbr-collapse nav-link nav-link-border collapser collapser-active open">
+                <i class="far fa-sticky-note"></i> <span class="p-collapsing-title">App pages</span>
+              </a>
+              <div class="collapse nav-collapse collapse show">
+                <ul class="list-unstyled">
+                  <li class="nav-item">
+                    <a href="email.html" class="p-collapsing-title nav-link">
+                      <span>Email</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="chat.html" class="p-collapsing-title nav-link">
+                      <span>Chat</span>
+                    </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a href="profile.html" class="p-collapsing-title nav-link">
+                      <span>Profile</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="login.html" class="p-collapsing-title nav-link">
+                      <span>Login</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="register.html" class="p-collapsing-title nav-link">
+                      <span>Register</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="reset-password.html" class="p-collapsing-title nav-link">
+                      <span>Reset-password</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="forgot-password.html" class="p-collapsing-title nav-link">
+                      <span>Forgot-password</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="lock-screen.html" class="p-collapsing-title nav-link">
+                      <span>Lock-screen</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="404.html" class="p-collapsing-title nav-link">
+                      <span>404 Error</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>  
+            </li>
+            <li class="nav-item text-light transition">
+              <a href="" aria-expanded="false" data-toggle="collapse" class="sbr-collapse nav-link nav-link-border collapser collapser-active open">
+                <i class="fas fa-shopping-cart"></i> <span class="p-collapsing-title">E-Commerce</span>
+              </a>
+              <div class="collapse nav-collapse collapse show">
+                <ul class="list-unstyled">
+                  <li class="nav-item">
+                    <a href="shop.html" class="p-collapsing-title nav-link">
+                      <span>Shop</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="product-details.html" class="p-collapsing-title nav-link">
+                      <span>Product details</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item text-light transition">
+              <a href="" aria-expanded="false" data-toggle="collapse" class="sbr-collapse nav-link nav-link-border collapser collapser-active open">
+                <i class="far fa-clone"></i> <span class="p-collapsing-title">Form</span>
+              </a>
+              <div class="collapse nav-collapse collapse show">
+                <ul class="list-unstyled">
+                  <li class="nav-item">
+                    <a href="form-controls.html" class="p-collapsing-title nav-link">
+                      <span>Form Controls</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="input-group.html" class="p-collapsing-title nav-link">
+                      <span>Input group</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="checkbox.html" class="p-collapsing-title nav-link">
+                      <span>Checkbox</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="switch.html" class="p-collapsing-title nav-link">
+                      <span>Switch</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="range.html" class="p-collapsing-title nav-link">
+                      <span>Range</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="file-browser.html" class="p-collapsing-title nav-link">
+                      <span>File Browser</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item text-light transition">
+              <a href="" aria-expanded="false" data-toggle="collapse" class="sbr-collapse nav-link nav-link-border collapser collapser-active open">
+                <i class="fas fa-cube"></i> <span class="p-collapsing-title">Components</span>
+              </a>
+              <div class="collapse nav-collapse collapse show">
+                <ul class="list-unstyled">
+                  <li class="nav-item">
+                    <a href="accordion.html" class="p-collapsing-title nav-link">
+                      <span>Accordion</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="alerts.html" class="p-collapsing-title nav-link">
+                      <span>Alerts</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="breadcrumb.html" class="p-collapsing-title nav-link">
+                      <span>Breadcrumb</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="buttons.html" class="p-collapsing-title nav-link">
+                      <span>Buttons</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="card.html" class="p-collapsing-title nav-link">
+                      <span>Card</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="tabs.html" class="p-collapsing-title nav-link">
+                      <span>Tabs</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item text-light transition">
+              <a href="" aria-expanded="false" data-toggle="collapse" class="sbr-collapse nav-link nav-link-border collapser collapser-active open">
+                <i class="fas fa-chart-bar"></i> <span class="p-collapsing-title">Charts & Maps</span>
+              </a>
+              <div class="collapse nav-collapse collapse show">
+                <ul class="list-unstyled">
+                  <li class="nav-item">
+                    <a href="charts.html" class="p-collapsing-title nav-link">
+                      <span>Charts</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="google-map.html" class="p-collapsing-title nav-link">
+                      <span>Google Map</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- /.sidebar -->
+
+      <!-- main content -->
+      <div class="main-container">
+        <div class="overflow-hidden">
+          <!-- profile -->
+          <div id="profile" class="page-content-fl">
+            <div class="text-light px-4 py-4">
+              <h4 class="mb-0">Profile</h4>
+            </div>
+            <div class="container-fluid p-0">
+              <div class="row">
+                <div class="col-12 panel-header-oly">
+                  <div class="profile-header bs-c bp-t d-flex align-items-end flex-column" style="background: url(assets/img/profile/profile-bg.jpg);">
+                    <div class="flex-1 w-100 position-relative">
+                      <div class="position-absolute r-6 b-6">
+                        <a href="#" class="btn btn-lg btn-round btn-theme mr-4"><i class="fas fa-user-plus"></i> <span class="d-none d-md-inline">Friend</span></a>
+                        <a href="#" class="btn btn-lg btn-round btn-theme"><i class="fas fa-comment-dots"></i> <span class="d-none d-md-inline">Follow</span></a>
+                      </div>
+                    </div>
+                    <div class="profile-header-nav row no-gutters align-items-center py-5 w-100">
+                      <div class="col-2 col-lg-3">
+                        <div class="position-relative px-4">
+                          <img class="profile-avatar rounded-circle position-absolute absolute-center-X b-0 mx-6" src="assets/img/avatar/2.jpg" alt="Avatar">
+                        </div>
+                      </div>
+                      <div class="col-lg-9">
+
+                          <nav class="navbar navbar-expand-lg mnh-auto">
+                            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="icon-multimedia-menu lead-3 text-warning"></span>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="list-unstyled mb-0 d-flex justify-content-around w-100 flex-column flex-lg-row">
+                                <li class="py-2 py-lg-0"><a href="#" class="text-uppercase">Timeline</a></li>
+                                <li class="py-2 py-lg-0"><a href="#" class="text-uppercase">About</a></li>
+                                <li class="py-2 py-lg-0"><a href="#" class="text-uppercase">Friends</a></li>
+                                <li class="py-2 py-lg-0"><a href="#" class="text-uppercase">Photos</a></li>
+                                <li class="py-2 py-lg-0"><a href="#" class="text-uppercase">More</a></li>
+                              </ul>
+                            </div>
+                          </nav>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid p-0">
+              <!-- profile -->
+              <div class="row no-gutters panel-top-line">
+                <div class="col-xl-3 panel-right-line">
+                  <div class="px-5 py-6">
+                    <div class="d-flex align-items-center mb-6">
+                      <div>
+                        <span class="profile-title lh-1 fw-600 mb-2">Christine Beers</span>
+                        <span class="fw-300 text-secondary">Founder / CEO</span>
+                      </div>
+                      <div class="ml-auto lh-1 d-flex text-right">
+                        <div class="mr-4">
+                          <h5 class="mb-2 text-warning">212</h5>
+                          <span>Follows</span>
+                        </div>
+                        <div>
+                          <h5 class="mb-2 text-warning">37</h5>
+                          <span>Posts</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-light">
+                      <p class="fw-400 text-secondary">Tart I love sugar plum I love oat cake. Sweet roll caramels I love jujubes. Topping cake wafer.</p>
+                      <div>
+                        <h6 class="lh-5 mb-0"><i class="far fa-calendar-alt mr-1"></i> Joined:</h6>
+                        <p class="fw-400 text-secondary">May 29, 2018</p>
+                      </div>
+                      <div>
+                        <h6 class="lh-5 mb-0"><i class="fas fa-map-marker-alt"></i> Location:</h6>
+                        <p class="fw-400 text-secondary">Glamorgan St, Alliance, OH</p>
+                      </div>
+                      <div>
+                        <h6 class="lh-5 mb-0"><i class="fas fa-globe mr-1"></i> Website:</h6>
+                        <p class="fw-400 text-secondary">www.scthemes.space</p>
+                      </div>
+                      <div class="d-flex mt-4">
+                        <!-- facebook -->
+                        <a href="#">
+                          <div class="subtn-social rounded-circle mr-2">
+                            <div class="subtn-social-item">
+                              <i class="fab fa-facebook-f"></i>
+                            </div>
+                          </div>
+                        </a>
+                        <!-- /.facebook -->
+
+                        <!-- twitter -->
+                        <a href="#">
+                          <div class="subtn-social rounded-circle mr-2">
+                            <div class="subtn-social-item">
+                              <i class="fab fa-twitter"></i>
+                            </div>
+                          </div>
+                        </a>
+                        <!-- /.twitter -->
+  
+                        <!-- google+ -->
+                        <a href="#">
+                          <div class="subtn-social rounded-circle mr-2">
+                            <div class="subtn-social-item">
+                              <i class="fab fa-google-plus-g"></i>
+                            </div>
+                          </div>
+                        </a>
+                        <!-- /.google+ -->
+  
+                        <!-- linkedIn -->
+                        <a href="#">
+                          <div class="subtn-social rounded-circle">
+                            <div class="subtn-social-item">
+                              <i class="fab fa-linkedin-in"></i>
+                            </div>
+                          </div>
+                        </a>
+                        <!-- /.linkedIn -->
+  
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <header class="panel-top-line px-5 py-4">
+                      <h5 class="text-light text-uppercase fw-100 mb-0">Friends</h5>
+                    </header>
+                    <div class="panel-top-line px-5 py-6">
+                      <ul class="list-unstyled text-light">
+                        <li class="mb-5">
+                          <div class="d-flex align-items-center">
+                            <div><img class="img-sm rounded-circle" src="assets/img/avatar/1.jpg" alt="Avatar"></div>
+                            <div class="pl-4">
+                              <div class="d-flex align-items-center">
+                                <span class="lead-1 fw-500 lh-5">Albert Scott</span> <i class="fas fa-circle text-warning small-6 ml-1"></i>
+                              </div>
+                              <span class="text-secondary small-2">River St, Lake Placid, NY</span>
+                            </div>
+                            <div class="ml-auto">
+                              <div class="dropdown">
+                                <a class="nav-link d-inline-flex align-items-center h-100 text-capitalize ls-normal small-1 pr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span><i class="fas fa-ellipsis-v"></i></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right shadow-1 py-3 mt-1">
+                                  <a class="dropdown-item" href="#">Suggest friends</a>
+                                  <a class="dropdown-item" href="#">Remove from friends</a>
+                                  <a class="dropdown-item" href="#">Edit friend lists</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mb-5">
+                          <div class="d-flex align-items-center">
+                            <div><img class="img-sm rounded-circle" src="assets/img/avatar/3.jpg" alt="Avatar"></div>
+                            <div class="pl-4">
+                              <div class="d-flex align-items-center">
+                                <span class="lead-1 fw-500 lh-5">Ashley Balderas</span> <i class="fas fa-circle text-secondary small-6 ml-1"></i>
+                              </div>
+                              <span class="text-secondary small-2">River St, Lake Placid, NY</span>
+                            </div>
+                            <div class="ml-auto">
+                              <div class="dropdown">
+                                <a class="nav-link d-inline-flex align-items-center h-100 text-capitalize ls-normal small-1 pr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span><i class="fas fa-ellipsis-v"></i></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right shadow-1 py-3 mt-1">
+                                  <a class="dropdown-item" href="#">Suggest friends</a>
+                                  <a class="dropdown-item" href="#">Remove from friends</a>
+                                  <a class="dropdown-item" href="#">Edit friend lists</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mb-0">
+                          <div class="d-flex align-items-center">
+                            <div><img class="img-sm rounded-circle" src="assets/img/avatar/2.jpg" alt="Avatar"></div>
+                            <div class="pl-4">
+                              <div class="d-flex align-items-center">
+                                <span class="lead-1 fw-500 lh-5">Christine Beers</span> <i class="fas fa-circle text-warning small-6 ml-1"></i>
+                              </div>
+                              <span class="text-secondary small-2">River St, Lake Placid, NY</span>
+                            </div>
+                            <div class="ml-auto">
+                              <div class="dropdown">
+                                <a class="nav-link d-inline-flex align-items-center h-100 text-capitalize ls-normal small-1 pr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span><i class="fas fa-ellipsis-v"></i></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right shadow-1 py-3 mt-1">
+                                  <a class="dropdown-item" href="#">Suggest friends</a>
+                                  <a class="dropdown-item" href="#">Remove from friends</a>
+                                  <a class="dropdown-item" href="#">Edit friend lists</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <header class="panel-top-line px-5 py-4">
+                      <h5 class="text-light text-uppercase fw-100 mb-0">Upcomming Events</h5>
+                    </header>
+                    <div class="panel-top-line pl-8 pr-5 py-6">
+                      <!-- item -->
+                      <div class="timeline-item" data-time="24 Mar 2019" data-icon="&#xe900;">
+                        <div class="timeline-item-inner">
+                          <h6 class="d-inline-block fw-500 text-warning mb-2">Hoffman Ave, Bridgeport, AL</h6>
+                          <p class="small-1 lh-5 text-secondary mb-0">
+                            Nulla ullamcorper tempus ex commodo iaculis.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- /.item -->
+                      <!-- item -->
+                      <div class="timeline-item" data-time="28 Feb 2019" data-icon="&#xe900;">
+                        <div class="timeline-item-inner">
+                          <h6 class="d-inline-block fw-500 text-warning mb-2">Dogowood Ln, Zion Grove, PA</h6>
+                          <p class="small-1 lh-5 text-secondary mb-0">
+                            Nulla ullamcorper tempus ex commodo iaculis.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- /.item -->
+                      <!-- item -->
+                      <div class="timeline-item" data-time="19 Feb 2019" data-icon="&#xe900;">
+                        <div class="timeline-item-inner">
+                          <h6 class="d-inline-block fw-500 text-warning mb-2">Boyer Dr, Newark, DE</h6>
+                          <p class="small-1 lh-5 text-secondary mb-0">
+                            Nulla ullamcorper tempus ex commodo iaculis.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- /.item -->
+                    </div>
+                  </div>
+                  <div>
+                    <header class="panel-top-line px-5 py-4">
+                      <h5 class="text-light text-uppercase fw-100 mb-0">Suggestions</h5>
+                    </header>
+                    <div class="panel-top-line px-5 py-6">
+                      <ul class="list-unstyled">
+                        <li class="mb-5">
+                          <div class="d-flex align-items-center">
+                            <div><img class="img-sm rounded-circle" src="assets/img/avatar/1.jpg" alt="Avatar"></div>
+                            <div class="pl-4">
+                              <div class="d-flex align-items-center">
+                                <span class="lead-1 fw-500 lh-5">Michael Beasock</span> <i class="fas fa-circle text-warning small-6 ml-1"></i>
+                              </div>
+                              <span class="text-secondary small-2">River St, Lake Placid, NY</span>
+                            </div>
+                            <div class="ml-auto">
+                              <a href="#" class="text-warning"><i class="fas fa-user-plus"></i></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mb-5">
+                          <div class="d-flex align-items-center">
+                            <div><img class="img-sm rounded-circle" src="assets/img/avatar/1.jpg" alt="Avatar"></div>
+                            <div class="pl-4">
+                              <div class="d-flex align-items-center">
+                                <span class="lead-1 fw-500 lh-5">Tom Ellis</span> <i class="fas fa-circle text-secondary small-6 ml-1"></i>
+                              </div>
+                              <span class="text-secondary small-2">River St, Lake Placid, NY</span>
+                            </div>
+                            <div class="ml-auto">
+                              <a href="#" class="text-warning"><i class="fas fa-user-plus"></i></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="d-flex align-items-center">
+                            <div><img class="img-sm rounded-circle" src="assets/img/avatar/2.jpg" alt="Avatar"></div>
+                            <div class="pl-4">
+                              <div class="d-flex align-items-center">
+                                <span class="lead-1 fw-500 lh-5">Christine Beers</span> <i class="fas fa-circle text-warning small-6 ml-1"></i>
+                              </div>
+                              <span class="text-secondary small-2">River St, Lake Placid, NY</span>
+                            </div>
+                            <div class="ml-auto">
+                              <a href="#" class="text-warning"><i class="fas fa-user-plus"></i></a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item col-xl-6 panel-right-line">
+                    <div class="p-4">
+                      <div class="mb-7">
+                        <div class="form-group">
+                          <textarea class="form-control" rows="5" placeholder="What do you want to write about?"></textarea>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <a href="#" class="btn p-0 mr-2"><i class="fas fa-camera lead-3 text-warning"></i></a>
+                            <a href="#" class="btn p-0 mr-2"><i class="fas fa-film lead-3 text-warning"></i></a>
+                            <a href="#" class="btn p-0 mr-0"><i class="fas fa-music lead-3 text-warning"></i></a>
+                          </div>
+                          <div class="ml-auto">
+                            <a href="#" class="btn btn-round btn-warning"><i class="fas fa-paper-plane small-1"></i> Create Post</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="profile-post-block">
+                          <div>
+                            <div class="mb-5">
+                              <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center text-light">
+                                  <div>
+                                    <img class="profile-avatar rounded-circle" src="assets/img/avatar/2.jpg" alt="Avatar">
+                                  </div>
+                                  <div class="lh-2 pl-4">
+                                    <h6 class="mb-0">Christine Beers</h6>
+                                    <span class="small-3 text-secondary fw-500">28 May 2019 at 11:51 PM</span>
+                                  </div>
+                                </div>
+                                <div class="ml-auto">
+                                  <div class="dropdown">
+                                    <a class="nav-link d-inline-flex align-items-center h-100 text-capitalize ls-normal small-1 pr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <span><i class="fas fa-chevron-down"></i></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow-1 py-3 mt-1">
+                                      <a class="dropdown-item" href="#">Edit post</a>
+                                      <a class="dropdown-item" href="#">Delete post</a>
+                                      <a class="dropdown-item" href="#">Copy link</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-5">
+                              <p class="fw-400">I don't think I could live alone again. I have to do something to help that child. You stand there and accuse me, but where were you at the time?</p>
+                            </div>
+                            <img src="assets/img/profile/post-bg.jpg" class="rounded" alt="Post">
+                            <div class="py-6">
+                              <a href="#" class="d-inline-block mr-4"><i class="far fa-heart text-warning"></i> <span class="fw-400">26 Likes</span></a>
+                              <a href="#"><i class="far fa-comment text-warning"></i> <span class="fw-400">18 Comments</span></a>
+                            </div>
+                          </div>
+                          <div class="panel-top-line pt-6">
+                            <!-- comment -->
+                            <div>
+                              <div class="mb-7">
+                                <div class="d-flex">
+                                  <div class="d-flex text-light">
+                                    <div>
+                                      <img class="profile-comment-avatar rounded-circle" src="assets/img/avatar/1.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="lh-2 pl-4">
+                                      <span class="d-block fw-500 lead-1 mb-1">Albert Scott</span>
+                                      <span class="small-3 fw-500 text-secondary">28 May 2019 at 12:30 PM</span>
+                                      <span class="d-block mt-3 fw-400">I knew you wouldn't be able to see it through.</span>
+                                      <div class="d-flex mt-4">
+                                        <a href="#" class="d-inline-block small-3">
+                                          <i class="far fa-heart text-warning"></i> <span class="fw-400">26 Likes</span>
+                                        </a>
+                                        <a href="#" class="d-inline-block ml-4 small-3">
+                                          <i class="fas fa-reply text-warning"></i> <span class="fw-400">Reply</span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ml-auto">
+                                    <div class="dropdown">
+                                      <a class="nav-link d-inline-flex align-items-center h-100 text-capitalize ls-normal small-1 pr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span><i class="fas fa-chevron-down"></i></span>
+                                      </a>
+                                      <div class="dropdown-menu dropdown-menu-right shadow-1 py-3 mt-1">
+                                        <a class="dropdown-item" href="#">Edit post</a>
+                                        <a class="dropdown-item" href="#">Delete post</a>
+                                        <a class="dropdown-item" href="#">Copy link</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- sComment -->
+                              <div class="ml-9 mb-7">
+                                <div class="d-flex">
+                                  <div class="d-flex text-light">
+                                    <div>
+                                      <img class="profile-comment-avatar rounded-circle" src="assets/img/avatar/2.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="lh-2 pl-4">
+                                      <span class="d-block fw-500 lead-1 mb-1">Christine Beers</span>
+                                      <span class="small-3 fw-500 text-secondary">28 May 2019 at 12:35 PM</span>
+                                      <span class="d-block mt-3 fw-400">I knew you wouldn't be able to see it through.</span>
+                                      <div class="d-flex mt-4">
+                                        <a href="#" class="d-inline-block small-3">
+                                          <i class="far fa-heart text-warning"></i> <span class="fw-400">15 Likes</span>
+                                        </a>
+                                        <a href="#" class="d-inline-block ml-4 small-3">
+                                          <i class="fas fa-reply text-warning"></i> <span class="fw-400">Reply</span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ml-auto">
+                                    <div class="dropdown">
+                                      <a class="nav-link d-inline-flex align-items-center h-100 text-capitalize ls-normal small-1 pr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span><i class="fas fa-chevron-down"></i></span>
+                                      </a>
+                                      <div class="dropdown-menu dropdown-menu-right shadow-1 py-3 mt-1">
+                                        <a class="dropdown-item" href="#">Edit post</a>
+                                        <a class="dropdown-item" href="#">Delete post</a>
+                                        <a class="dropdown-item" href="#">Copy link</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /.sComment -->
+                            </div>
+                            <!-- /.comment -->
+                            <!-- comment -->
+                            <div>
+                              <div class="mb-7">
+                                <div class="d-flex">
+                                  <div class="d-flex text-light">
+                                    <div>
+                                      <img class="profile-comment-avatar rounded-circle" src="assets/img/avatar/3.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="lh-2 pl-4">
+                                      <span class="d-block fw-500 lead-1 mb-1">Ashley Balderas</span>
+                                      <span class="small-3 fw-500 text-secondary">28 May 2019 at 12:30 PM</span>
+                                      <span class="d-block mt-3 fw-400">I knew you wouldn't be able to see it through.</span>
+                                      <div class="d-flex mt-4">
+                                        <a href="#" class="d-inline-block small-3">
+                                          <i class="far fa-heart text-warning"></i> <span class="fw-400">26 Likes</span>
+                                        </a>
+                                        <a href="#" class="d-inline-block ml-4 small-3">
+                                          <i class="fas fa-reply text-warning"></i> <span class="fw-400">Reply</span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ml-auto">
+                                    <div class="dropdown">
+                                      <a class="nav-link d-inline-flex align-items-center h-100 text-capitalize ls-normal small-1 pr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span><i class="fas fa-chevron-down"></i></span>
+                                      </a>
+                                      <div class="dropdown-menu dropdown-menu-right shadow-1 py-3 mt-1">
+                                        <a class="dropdown-item" href="#">Edit post</a>
+                                        <a class="dropdown-item" href="#">Delete post</a>
+                                        <a class="dropdown-item" href="#">Copy link</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- /.comment -->
+                          </div>
+                          <div class="mt-7">
+                            <div class="form-group">
+                              <textarea class="form-control form-control-sm" rows="5" placeholder="Add Comment"></textarea>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <div class="mr-auto">
+                                <a href="#" class="btn btn-sm btn-round btn-warning">Post Comment</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="profile-post-block">
+                          <div>
+                            <div class="mb-5">
+                              <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center text-light">
+                                  <div>
+                                    <img class="profile-avatar rounded-circle" src="assets/img/avatar/2.jpg" alt="Avatar">
+                                  </div>
+                                  <div class="lh-2 pl-4">
+                                    <h6 class="mb-0">Christine Beers</h6>
+                                    <span class="small-3 text-secondary fw-500">28 May 2019 at 11:51 PM</span>
+                                  </div>
+                                </div>
+                                <div class="ml-auto">
+                                  <div class="dropdown">
+                                    <a class="nav-link d-inline-flex align-items-center h-100 text-capitalize ls-normal small-1 pr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <span><i class="fas fa-chevron-down"></i></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow-1 py-3 mt-1">
+                                      <a class="dropdown-item" href="#">Edit post</a>
+                                      <a class="dropdown-item" href="#">Delete post</a>
+                                      <a class="dropdown-item" href="#">Copy link</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-5">
+                              <p class="fw-400">I don't think I could live alone again. I have to do something to help that child. You stand there and accuse me, but where were you at the time?</p>
+                            </div>
+                            <img src="assets/img/profile/profile-bg.jpg" class="rounded" alt="Post">
+                            <div class="py-6">
+                              <a href="#" class="d-inline-block mr-4"><i class="far fa-heart text-warning"></i> <span class="fw-400">26 Likes</span></a>
+                              <a href="#"><i class="far fa-comment text-warning"></i> <span class="fw-400">18 Comments</span></a>
+                            </div>
+                          </div>
+                          <div class="panel-top-line pt-6">
+                            <!-- comment -->
+                            <div>
+                              <div class="mb-7">
+                                <div class="d-flex">
+                                  <div class="d-flex text-light">
+                                    <div>
+                                      <img class="profile-comment-avatar rounded-circle" src="assets/img/avatar/3.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="lh-2 pl-4">
+                                      <span class="d-block fw-500 lead-1 mb-1">Ashley Balderas</span>
+                                      <span class="small-3 fw-500 text-secondary">28 May 2019 at 12:30 PM</span>
+                                      <span class="d-block mt-3 fw-400">I knew you wouldn't be able to see it through.</span>
+                                      <div class="d-flex mt-4">
+                                        <a href="#" class="d-inline-block small-3">
+                                          <i class="far fa-heart text-warning"></i> <span class="fw-400">26 Likes</span>
+                                        </a>
+                                        <a href="#" class="d-inline-block ml-4 small-3">
+                                          <i class="fas fa-reply text-warning"></i> <span class="fw-400">Reply</span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ml-auto">
+                                    <div class="dropdown">
+                                      <a class="nav-link d-inline-flex align-items-center h-100 text-capitalize ls-normal small-1 pr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span><i class="fas fa-chevron-down"></i></span>
+                                      </a>
+                                      <div class="dropdown-menu dropdown-menu-right shadow-1 py-3 mt-1">
+                                        <a class="dropdown-item" href="#">Edit post</a>
+                                        <a class="dropdown-item" href="#">Delete post</a>
+                                        <a class="dropdown-item" href="#">Copy link</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- sComment -->
+                              <div class="ml-9 mb-7">
+                                <div class="d-flex">
+                                  <div class="d-flex text-light">
+                                    <div>
+                                      <img class="profile-comment-avatar rounded-circle" src="assets/img/avatar/2.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="lh-2 pl-4">
+                                      <span class="d-block fw-500 lead-1 mb-1">Christine Beers</span>
+                                      <span class="small-3 fw-500 text-secondary">28 May 2019 at 12:35 PM</span>
+                                      <span class="d-block mt-3 fw-400">I knew you wouldn't be able to see it through.</span>
+                                      <div class="d-flex mt-4">
+                                        <a href="#" class="d-inline-block small-3">
+                                          <i class="far fa-heart text-warning"></i> <span class="fw-400">15 Likes</span>
+                                        </a>
+                                        <a href="#" class="d-inline-block ml-4 small-3">
+                                          <i class="fas fa-reply text-warning"></i> <span class="fw-400">Reply</span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ml-auto">
+                                    <div class="dropdown">
+                                      <a class="nav-link d-inline-flex align-items-center h-100 text-capitalize ls-normal small-1 pr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span><i class="fas fa-chevron-down"></i></span>
+                                      </a>
+                                      <div class="dropdown-menu dropdown-menu-right shadow-1 py-3 mt-1">
+                                        <a class="dropdown-item" href="#">Edit post</a>
+                                        <a class="dropdown-item" href="#">Delete post</a>
+                                        <a class="dropdown-item" href="#">Copy link</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /.sComment -->
+                            </div>
+                            <!-- /.comment -->
+                            <!-- comment -->
+                            <div>
+                              <div class="mb-7">
+                                <div class="d-flex">
+                                  <div class="d-flex text-light">
+                                    <div>
+                                      <img class="profile-comment-avatar rounded-circle" src="assets/img/avatar/1.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="lh-2 pl-4">
+                                      <span class="d-block fw-500 lead-1 mb-1">Albert Scott</span>
+                                      <span class="small-3 fw-500 text-secondary">28 May 2019 at 12:30 PM</span>
+                                      <span class="d-block mt-3 fw-400">I knew you wouldn't be able to see it through.</span>
+                                      <div class="d-flex mt-4">
+                                        <a href="#" class="d-inline-block small-3">
+                                          <i class="far fa-heart text-warning"></i> <span class="fw-400">26 Likes</span>
+                                        </a>
+                                        <a href="#" class="d-inline-block ml-4 small-3">
+                                          <i class="fas fa-reply text-warning"></i> <span class="fw-400">Reply</span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ml-auto">
+                                    <div class="dropdown">
+                                      <a class="nav-link d-inline-flex align-items-center h-100 text-capitalize ls-normal small-1 pr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span><i class="fas fa-chevron-down"></i></span>
+                                      </a>
+                                      <div class="dropdown-menu dropdown-menu-right shadow-1 py-3 mt-1">
+                                        <a class="dropdown-item" href="#">Edit post</a>
+                                        <a class="dropdown-item" href="#">Delete post</a>
+                                        <a class="dropdown-item" href="#">Copy link</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- /.comment -->
+                          </div>
+                          <div class="mt-7">
+                            <div class="form-group">
+                              <textarea class="form-control form-control-sm" rows="5" placeholder="Add Comment"></textarea>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <div class="mr-auto">
+                                <a href="#" class="btn btn-sm btn-round btn-warning">Post Comment</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="card-item col-xl-3">
+                  <div>
+                    <header class="px-5 py-4">
+                      <h5 class="text-light text-uppercase fw-100 mb-0">Photos</h5>
+                    </header>
+                    <div class="panel-top-line px-5 py-6">
+                      <div class="row gutters-y text-center">
+                        <div class="col-md-6">
+                          <img src="assets/img/profile/profile-img.jpg" class="zoom-img rounded" alt="Images">
+                        </div>
+                        <div class="col-md-6">
+                          <img src="assets/img/profile/profile-img-02.jpg" class="zoom-img rounded" alt="Images">
+                        </div>
+                        <div class="col-md-6">
+                          <img src="assets/img/profile/profile-img-04.jpg" class="zoom-img rounded" alt="Images">
+                        </div>
+                        <div class="col-md-6">
+                          <img src="assets/img/profile/profile-img-03.jpg" class="zoom-img rounded" alt="Images">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <header class="panel-top-line px-5 py-4">
+                      <h5 class="text-light text-uppercase fw-100 mb-0">Skills</h5>
+                    </header>
+                    <div class="panel-top-line px-5 py-6">
+                      <div>
+                        <div class="mt-0 mb-4">
+                          <div class="d-flex mb-2 small"><span>Learning</span><span class="ml-auto">82%</span></div>
+                          <div class="progress w-100 my-0" style="height: 8px;">
+                            <div class="progress-bar bg-gradient-progress-warning" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mt-4 mb-4">
+                          <div class="d-flex mb-2 small"><span>Programming</span><span class="ml-auto">67%</span></div>
+                          <div class="progress w-100 my-0" style="height: 8px;">
+                            <div class="progress-bar bg-gradient-progress-danger" role="progressbar" style="width: 67%" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mt-4 mb-4">
+                          <div class="d-flex mb-2 small"><span>SEO</span><span class="ml-auto">26%</span></div>
+                          <div class="progress w-100 my-0" style="height: 8px;">
+                            <div class="progress-bar bg-gradient-progress-primary" role="progressbar" style="width: 26%" aria-valuenow="26" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- calendar -->
+                  <div>
+                    <header class="panel-top-line px-5 py-4">
+                      <h5 class="text-light text-uppercase fw-100 mb-0">Calendar</h5>
+                    </header>
+                    <div id="calendar" class="panel-calendar carousel slide carousel-fade panel-bottom-line" data-ride="carousel" data-interval="false">
+                      <div class="carousel-inner">
+                        <!-- calendar-item -->
+                        <div class="carousel-item active">
+                          <div class="position-relative ar-16_9 bp-c bs-c" style="background: url(assets/img/calendar/jan-bg.jpg)">
+                            <div class="calendar-header position-absolute w-100 b-0 text-center">
+                              <div class="position-relative">
+                                <div class="py-4">
+                                  <span class="lead-2 fw-100 mb-0">January, 2019</span>
+                                </div>
+                                <div>
+                                  <a class="carousel-control-prev" href="#calendar" data-slide="prev">
+                                    <img src="assets/img/icons/left-arrow.svg" class="left-arrow" alt="<">
+                                  </a>
+                                  <a class="carousel-control-next" href="#calendar" data-slide="next">
+                                    <img src="assets/img/icons/right-arrow.svg" class="right-arrow" alt=">">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <table class="table table-bordered table-dark my-4">
+                            <thead>
+                              <tr>
+                                <th scope="col">Mo</th>
+                                <th scope="col">Tu</th>
+                                <th scope="col">We</th>
+                                <th scope="col">Th</th>
+                                <th scope="col">Fr</th>
+                                <th scope="col">Sa</th>
+                                <th scope="col">Su</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>3</td>
+                                <td class="cldr-event">4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">8</th>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">15</th>
+                                <td>16</td>
+                                <td class="cldr-event">17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td class="cldr-event">20</td>
+                                <td>21</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">22</th>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">29</th>
+                                <td>30</td>
+                                <td>31</td>
+                                <td class="text-gray">1</td>
+                                <td class="text-gray">2</td>
+                                <td class="text-gray">3</td>
+                                <td class="text-gray">4</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.calendar-item -->
+                        <!-- calendar-item -->
+                        <div class="carousel-item">
+                          <div class="position-relative ar-16_9 bp-c bs-c" style="background: url(assets/img/calendar/feb-bg.jpg)">
+                            <div class="calendar-header position-absolute w-100 b-0 text-center">
+                              <div class="position-relative">
+                                <div class="py-4">
+                                  <span class="lead-2 fw-100 mb-0">February, 2019</span>
+                                </div>
+                                <div>
+                                  <a class="carousel-control-prev" href="#calendar" data-slide="prev">
+                                    <img src="assets/img/icons/left-arrow.svg" class="left-arrow" alt="<">
+                                  </a>
+                                  <a class="carousel-control-next" href="#calendar" data-slide="next">
+                                    <img src="assets/img/icons/right-arrow.svg" class="right-arrow" alt=">">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <table class="table table-bordered table-dark my-4">
+                            <thead>
+                              <tr>
+                                <th scope="col">Mo</th>
+                                <th scope="col">Tu</th>
+                                <th scope="col">We</th>
+                                <th scope="col">Th</th>
+                                <th scope="col">Fr</th>
+                                <th scope="col">Sa</th>
+                                <th scope="col">Su</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">8</th>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td class="cldr-event">12</td>
+                                <td>13</td>
+                                <td>14</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">15</th>
+                                <td>16</td>
+                                <td>17</td>
+                                <td class="cldr-event">18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">22</th>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td class="cldr-event">27</td>
+                                <td>28</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">29</th>
+                                <td>30</td>
+                                <td>31</td>
+                                <td class="text-gray">1</td>
+                                <td class="text-gray">2</td>
+                                <td class="text-gray">3</td>
+                                <td class="text-gray">4</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.calendar-item -->
+                        <!-- calendar-item -->
+                        <div class="carousel-item">
+                          <div class="position-relative ar-16_9 bp-c bs-c" style="background: url(assets/img/calendar/april-bg.jpg)">
+                            <div class="calendar-header position-absolute w-100 b-0 text-center">
+                              <div class="position-relative">
+                                <div class="py-4">
+                                  <span class="lead-2 fw-100 mb-0">April, 2019</span>
+                                </div>
+                                <div>
+                                  <a class="carousel-control-prev" href="#calendar" data-slide="prev">
+                                    <img src="assets/img/icons/left-arrow.svg" class="left-arrow" alt="<">
+                                  </a>
+                                  <a class="carousel-control-next" href="#calendar" data-slide="next">
+                                    <img src="assets/img/icons/right-arrow.svg" class="right-arrow" alt=">">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <table class="table table-bordered table-dark my-4">
+                            <thead>
+                              <tr>
+                                <th scope="col">Mo</th>
+                                <th scope="col">Tu</th>
+                                <th scope="col">We</th>
+                                <th scope="col">Th</th>
+                                <th scope="col">Fr</th>
+                                <th scope="col">Sa</th>
+                                <th scope="col">Su</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td class="cldr-event">5</td>
+                                <td>6</td>
+                                <td>7</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">8</th>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">15</th>
+                                <td>16</td>
+                                <td class="cldr-event">17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td class="cldr-event">20</td>
+                                <td>21</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">22</th>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td class="cldr-event">27</td>
+                                <td>28</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">29</th>
+                                <td>30</td>
+                                <td>31</td>
+                                <td class="text-gray">1</td>
+                                <td class="text-gray">2</td>
+                                <td class="text-gray">3</td>
+                                <td class="text-gray">4</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.calendar-item -->
+                        <!-- calendar-item -->
+                        <div class="carousel-item">
+                          <div class="position-relative ar-16_9 bp-c bs-c" style="background: url(assets/img/calendar/may-bg.jpg)">
+                            <div class="calendar-header position-absolute w-100 b-0 text-center">
+                              <div class="position-relative">
+                                <div class="py-4">
+                                  <span class="lead-2 fw-100 mb-0">May, 2019</span>
+                                </div>
+                                <div>
+                                  <a class="carousel-control-prev" href="#calendar" data-slide="prev">
+                                    <img src="assets/img/icons/left-arrow.svg" class="left-arrow" alt="<">
+                                  </a>
+                                  <a class="carousel-control-next" href="#calendar" data-slide="next">
+                                    <img src="assets/img/icons/right-arrow.svg" class="right-arrow" alt=">">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <table class="table table-bordered table-dark my-4">
+                            <thead>
+                              <tr>
+                                <th scope="col">Mo</th>
+                                <th scope="col">Tu</th>
+                                <th scope="col">We</th>
+                                <th scope="col">Th</th>
+                                <th scope="col">Fr</th>
+                                <th scope="col">Sa</th>
+                                <th scope="col">Su</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">8</th>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td class="cldr-event">14</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">15</th>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">22</th>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">29</th>
+                                <td>30</td>
+                                <td>31</td>
+                                <td class="text-gray">1</td>
+                                <td class="text-gray">2</td>
+                                <td class="text-gray">3</td>
+                                <td class="text-gray">4</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.calendar-item -->
+                        <!-- calendar-item -->
+                        <div class="carousel-item">
+                          <div class="position-relative ar-16_9 bp-c bs-c" style="background: url(assets/img/calendar/june-bg.jpg)">
+                            <div class="calendar-header position-absolute w-100 b-0 text-center">
+                              <div class="position-relative">
+                                <div class="py-4">
+                                  <span class="lead-2 fw-100 mb-0">June, 2019</span>
+                                </div>
+                                <div>
+                                  <a class="carousel-control-prev" href="#calendar" data-slide="prev">
+                                    <img src="assets/img/icons/left-arrow.svg" class="left-arrow" alt="<">
+                                  </a>
+                                  <a class="carousel-control-next" href="#calendar" data-slide="next">
+                                    <img src="assets/img/icons/right-arrow.svg" class="right-arrow" alt=">">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <table class="table table-bordered table-dark my-4">
+                            <thead>
+                              <tr>
+                                <th scope="col">Mo</th>
+                                <th scope="col">Tu</th>
+                                <th scope="col">We</th>
+                                <th scope="col">Th</th>
+                                <th scope="col">Fr</th>
+                                <th scope="col">Sa</th>
+                                <th scope="col">Su</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td class="cldr-event">3</td>
+                                <td class="cldr-event">4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td class="cldr-event">7</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">8</th>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">15</th>
+                                <td>16</td>
+                                <td class="cldr-event">17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">22</th>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td class="cldr-event">28</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">29</th>
+                                <td>30</td>
+                                <td>31</td>
+                                <td class="text-gray">1</td>
+                                <td class="text-gray">2</td>
+                                <td class="text-gray">3</td>
+                                <td class="text-gray">4</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.calendar-item -->
+                        <!-- calendar-item -->
+                        <div class="carousel-item">
+                          <div class="position-relative ar-16_9 bp-c bs-c" style="background: url(assets/img/calendar/july-bg.jpg)">
+                            <div class="calendar-header position-absolute w-100 b-0 text-center">
+                              <div class="position-relative">
+                                <div class="py-4">
+                                  <span class="lead-2 fw-100 mb-0">July, 2019</span>
+                                </div>
+                                <div>
+                                  <a class="carousel-control-prev" href="#calendar" data-slide="prev">
+                                    <img src="assets/img/icons/left-arrow.svg" class="left-arrow" alt="<">
+                                  </a>
+                                  <a class="carousel-control-next" href="#calendar" data-slide="next">
+                                    <img src="assets/img/icons/right-arrow.svg" class="right-arrow" alt=">">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <table class="table table-bordered table-dark my-4">
+                            <thead>
+                              <tr>
+                                <th scope="col">Mo</th>
+                                <th scope="col">Tu</th>
+                                <th scope="col">We</th>
+                                <th scope="col">Th</th>
+                                <th scope="col">Fr</th>
+                                <th scope="col">Sa</th>
+                                <th scope="col">Su</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">8</th>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">15</th>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td class="cldr-event">19</td>
+                                <td>20</td>
+                                <td>21</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">22</th>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">29</th>
+                                <td>30</td>
+                                <td>31</td>
+                                <td class="text-gray">1</td>
+                                <td class="text-gray">2</td>
+                                <td class="text-gray">3</td>
+                                <td class="text-gray">4</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.calendar-item -->
+                        <!-- calendar-item -->
+                        <div class="carousel-item">
+                          <div class="position-relative ar-16_9 bp-c bs-c" style="background: url(assets/img/calendar/aug-bg.jpg)">
+                            <div class="calendar-header position-absolute w-100 b-0 text-center">
+                              <div class="position-relative">
+                                <div class="py-4">
+                                  <span class="lead-2 fw-100 mb-0">August, 2019</span>
+                                </div>
+                                <div>
+                                  <a class="carousel-control-prev" href="#calendar" data-slide="prev">
+                                    <img src="assets/img/icons/left-arrow.svg" class="left-arrow" alt="<">
+                                  </a>
+                                  <a class="carousel-control-next" href="#calendar" data-slide="next">
+                                    <img src="assets/img/icons/right-arrow.svg" class="right-arrow" alt=">">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <table class="table table-bordered table-dark my-4">
+                            <thead>
+                              <tr>
+                                <th scope="col">Mo</th>
+                                <th scope="col">Tu</th>
+                                <th scope="col">We</th>
+                                <th scope="col">Th</th>
+                                <th scope="col">Fr</th>
+                                <th scope="col">Sa</th>
+                                <th scope="col">Su</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">8</th>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td class="cldr-event">12</td>
+                                <td class="cldr-event">13</td>
+                                <td>14</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">15</th>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">22</th>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td class="cldr-event">27</td>
+                                <td>28</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">29</th>
+                                <td>30</td>
+                                <td>31</td>
+                                <td class="text-gray">1</td>
+                                <td class="text-gray">2</td>
+                                <td class="text-gray">3</td>
+                                <td class="text-gray">4</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.calendar-item -->
+                        <!-- calendar-item -->
+                        <div class="carousel-item">
+                          <div class="position-relative ar-16_9 bp-c bs-c" style="background: url(assets/img/calendar/sep-bg.jpg)">
+                            <div class="calendar-header position-absolute w-100 b-0 text-center">
+                              <div class="position-relative">
+                                <div class="py-4">
+                                  <span class="lead-2 fw-100 mb-0">September, 2019</span>
+                                </div>
+                                <div>
+                                  <a class="carousel-control-prev" href="#calendar" data-slide="prev">
+                                    <img src="assets/img/icons/left-arrow.svg" class="left-arrow" alt="<">
+                                  </a>
+                                  <a class="carousel-control-next" href="#calendar" data-slide="next">
+                                    <img src="assets/img/icons/right-arrow.svg" class="right-arrow" alt=">">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <table class="table table-bordered table-dark my-4">
+                            <thead>
+                              <tr>
+                                <th scope="col">Mo</th>
+                                <th scope="col">Tu</th>
+                                <th scope="col">We</th>
+                                <th scope="col">Th</th>
+                                <th scope="col">Fr</th>
+                                <th scope="col">Sa</th>
+                                <th scope="col">Su</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td class="cldr-event">7</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">8</th>
+                                <td class="cldr-event">9</td>
+                                <td class="cldr-event">10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">15</th>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">22</th>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">29</th>
+                                <td>30</td>
+                                <td>31</td>
+                                <td class="text-gray">1</td>
+                                <td class="text-gray">2</td>
+                                <td class="text-gray">3</td>
+                                <td class="text-gray">4</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.calendar-item -->
+                        <!-- calendar-item -->
+                        <div class="carousel-item">
+                          <div class="position-relative ar-16_9 bp-c bs-c" style="background: url(assets/img/calendar/oct-bg.jpg)">
+                            <div class="calendar-header position-absolute w-100 b-0 text-center">
+                              <div class="position-relative">
+                                <div class="py-4">
+                                  <span class="lead-2 fw-100 mb-0">October, 2019</span>
+                                </div>
+                                <div>
+                                  <a class="carousel-control-prev" href="#calendar" data-slide="prev">
+                                    <img src="assets/img/icons/left-arrow.svg" class="left-arrow" alt="<">
+                                  </a>
+                                  <a class="carousel-control-next" href="#calendar" data-slide="next">
+                                    <img src="assets/img/icons/right-arrow.svg" class="right-arrow" alt=">">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <table class="table table-bordered table-dark my-4">
+                            <thead>
+                              <tr>
+                                <th scope="col">Mo</th>
+                                <th scope="col">Tu</th>
+                                <th scope="col">We</th>
+                                <th scope="col">Th</th>
+                                <th scope="col">Fr</th>
+                                <th scope="col">Sa</th>
+                                <th scope="col">Su</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">8</th>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">15</th>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">22</th>
+                                <td>23</td>
+                                <td>24</td>
+                                <td class="cldr-event">25</td>
+                                <td class="cldr-event">26</td>
+                                <td>27</td>
+                                <td>28</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">29</th>
+                                <td>30</td>
+                                <td>31</td>
+                                <td class="text-gray">1</td>
+                                <td class="text-gray">2</td>
+                                <td class="text-gray">3</td>
+                                <td class="text-gray">4</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.calendar-item -->
+                        <!-- calendar-item -->
+                        <div class="carousel-item">
+                          <div class="position-relative ar-16_9 bp-c bs-c" style="background: url(assets/img/calendar/nov-bg.jpg)">
+                            <div class="calendar-header position-absolute w-100 b-0 text-center">
+                              <div class="position-relative">
+                                <div class="py-4">
+                                  <span class="lead-2 fw-100 mb-0">November, 2019</span>
+                                </div>
+                                <div>
+                                  <a class="carousel-control-prev" href="#calendar" data-slide="prev">
+                                    <img src="assets/img/icons/left-arrow.svg" class="left-arrow" alt="<">
+                                  </a>
+                                  <a class="carousel-control-next" href="#calendar" data-slide="next">
+                                    <img src="assets/img/icons/right-arrow.svg" class="right-arrow" alt=">">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <table class="table table-bordered table-dark my-4">
+                            <thead>
+                              <tr>
+                                <th scope="col">Mo</th>
+                                <th scope="col">Tu</th>
+                                <th scope="col">We</th>
+                                <th scope="col">Th</th>
+                                <th scope="col">Fr</th>
+                                <th scope="col">Sa</th>
+                                <th scope="col">Su</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">8</th>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">15</th>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td class="cldr-event">20</td>
+                                <td>21</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">22</th>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td class="cldr-event">27</td>
+                                <td class="cldr-event">28</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">29</th>
+                                <td>30</td>
+                                <td>31</td>
+                                <td class="text-gray">1</td>
+                                <td class="text-gray">2</td>
+                                <td class="text-gray">3</td>
+                                <td class="text-gray">4</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.calendar-item -->
+                        <!-- calendar-item -->
+                        <div class="carousel-item">
+                          <div class="position-relative ar-16_9 bp-c bs-c" style="background: url(assets/img/calendar/dec-bg.jpg)">
+                            <div class="calendar-header position-absolute w-100 b-0 text-center">
+                              <div class="position-relative">
+                                <div class="py-4">
+                                  <span class="lead-2 fw-100 mb-0">December, 2019</span>
+                                </div>
+                                <div>
+                                  <a class="carousel-control-prev" href="#calendar" data-slide="prev">
+                                    <img src="assets/img/icons/left-arrow.svg" class="left-arrow" alt="<">
+                                  </a>
+                                  <a class="carousel-control-next" href="#calendar" data-slide="next">
+                                    <img src="assets/img/icons/right-arrow.svg" class="right-arrow" alt=">">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <table class="table table-bordered table-dark my-4">
+                            <thead>
+                              <tr>
+                                <th scope="col">Mo</th>
+                                <th scope="col">Tu</th>
+                                <th scope="col">We</th>
+                                <th scope="col">Th</th>
+                                <th scope="col">Fr</th>
+                                <th scope="col">Sa</th>
+                                <th scope="col">Su</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2</td>
+                                <td class="cldr-event">3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">8</th>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">15</th>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td class="cldr-event">19</td>
+                                <td class="cldr-event">20</td>
+                                <td>21</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">22</th>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">29</th>
+                                <td>30</td>
+                                <td class="cldr-event">31</td>
+                                <td class="text-gray">1</td>
+                                <td class="text-gray">2</td>
+                                <td class="text-gray">3</td>
+                                <td class="text-gray">4</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.calendar-item -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.calendar -->
+                </div>
+              </div>
+              <!-- /.panel-card -->
+            </div>
+          </div>
+          <!-- /.profile -->
+        
+          <!-- footer -->
+          <footer id="footer" class="footer">
+            <div class="container-fluid">
+              <div class="row gutters-y align-items-center">
+                <div class="col-md-6 col-lg-5">
+                  <div class="px-3 fw-400">
+                    © 2019 BEID.
+                    All rights reserved
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-7 order-lg-last d-none d-md-block">
+                  <div class="nav nav-bold-style justify-content-end text-uppercase px-2">
+                    <a class="nav-link" href="#">Terms of use</a>
+                    <a class="nav-link" href="#">Privacy Policy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- /.footer -->
+        </div>
+      </div>
+      <!-- /.main content -->
+    </main>
+    <!-- /.main -->
+
+    <!-- offcanvas - search -->
+    <div id="offcanvas-search" class="offcanvas h-100 py-8" data-animation="fadeDown" data-scrollbar="offcanvas">
+      <div class="row">
+        <div class="col-sm-1 order-sm-last">
+          <button type="button" data-toggle="offcanvas-close" class="close float-right mr-lg-6 text-light o-1 lead-2 fw-100" data-dismiss="offcanvas" aria-label="Close">
+            <span aria-hidden="true" class="icon-close"></span>
+          </button>
+        </div>
+        <form class="col-sm-11 col-lg-10 mx-auto input-rounded form-inline position-relative w-100 mt-0">
+          <div class="input-group bg-none border-0 w-100">
+            <input class="form-control form-control-lg rounded-0 bg-none pl-0 h-auto fs-6 display-md-4 display-xl-2 fw-600" type="text" aria-label="Search" placeholder="Search for...">
+          </div>
+          <hr class="w-100 o-25 border-white mt-0">
+          <div class="row gutters-y w-100">
+            <div class="col-lg-3">
+              <h5 class="text-uppercase text-light mb-6"><i class="fas fa-long-arrow-alt-right"></i> Categories</h5>
+              <ul class="list-unstyled pl-4">
+                <li class="mb-4">
+                  <a href="#" class="tag-item"><strong>Architecture</strong> (800)</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="tag-item"><strong>Art & Illustration</strong> (317)</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="tag-item"><strong>Business & Corporate</strong> (419)</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="tag-item"><strong>Culture & Education</strong> (672)</a>
+                </li>
+                <li class="mb-0">
+                  <a href="#" class="tag-item"><strong>E-Commerce</strong> (272)</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h5 class="text-uppercase text-light mb-6"><i class="fas fa-long-arrow-alt-right"></i> Tags</h5>
+              <ul class="list-unstyled pl-4">
+                <li class="mb-4">
+                  <a href="#" class="tag-item"><strong>360</strong> (128)</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="tag-item"><strong>3D</strong> (42)</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="tag-item"><strong>Animation</strong> (4105)</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="tag-item"><strong>Apps</strong> (319)</a>
+                </li>
+                <li class="mb-0">
+                  <a href="#" class="tag-item"><strong>Apps</strong> (319)</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h5 class="text-uppercase text-light mb-6"><i class="fas fa-long-arrow-alt-right"></i> Technologies</h5>
+              <ul class="list-unstyled pl-4">
+                <li class="mb-4">
+                  <a href="#" class="tag-item"><strong>AngularJS</strong> (629)</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="tag-item"><strong>Apache</strong> (241)</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="tag-item"><strong>Bootstrap</strong> (751)</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="tag-item"><strong>CloudFire</strong> (209)</a>
+                </li>
+                <li class="mb-0">
+                  <a href="#" class="tag-item"><strong>CloudFire</strong> (107)</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h5 class="text-uppercase text-light mb-6"><i class="fas fa-long-arrow-alt-right"></i> Countries</h5>
+              <ul class="list-unstyled pl-4">
+                <li class="mb-4">
+                  <a href="#" class="tag-item"><strong>United States</strong> (1605)</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="tag-item"><strong>France</strong> (569)</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="tag-item"><strong>Business & Corporate</strong> (419)</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="tag-item"><strong>United Kingdom</strong> (672)</a>
+                </li>
+                <li class="mb-0">
+                  <a href="#" class="tag-item"><strong>Italy</strong> (484)</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- /.offcanvas - search -->
+
+    <!-- preloader -->
+    <div class="preloaderWrapper"></div>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Chart.js -->
+    <script src="assets/plugins/chart/Chart.min.js" id="_chartJS_min"></script>
+    <script src="assets/plugins/chart/Chart.bundle.min.js"></script>
+    <script src="assets/plugins/chart/chartjs-plugin-annotation.js"></script>
+    <script src="assets/plugins/chart/chartjs-plugin-labels.js"></script>
+
+    <!-- apexcharts -->
+    <script src="assets/plugins/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Moment -->
+    <script src="assets/plugins/lib/moment/moment.min.js"></script>
+    
+    <!-- User JS -->
+    <script src="assets/js/scripts.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js" id="_mainJS" data-plugins="load"></script>
+
+    <!-- Modules -->
+    <script src="assets/js/modules.js"></script>
+    
+  </body>
+</html>
